@@ -1,5 +1,59 @@
-
-h1 {
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	background-image: url("images/iron.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.main-nav li{
+	display: inline-block;
+}
+.main-nav li a{
+	color: white;
+	text-decoration: none; /* xoa gach chan */
+	padding: 5px 20px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.menu a{
+	color: white;
+	text-decoration: none; /* xoa gach chan */
+	padding: 5px 20px;
+	font-size: 20px;
+	border: 2px solid white;
+}
+.menu h2{
 	text-align: center;
-	color: tomato;
+}
+.main-nav li.active a{
+	border: 1px solid white;
+}
+.main-nav li a:hover{
+	border: 1px solid white;
+}
+.logo img{
+	width: 150px;
+	height: auto;
+	float: left;
+	border-radius: 30%;
+}
+body{
+	font-family: monospace;
+}
+.row{
+	max-width: 1200px;
+	margin: auto;
+}
+.information{
+	color: white;
+	font-size: 16px;
+	padding-top: 200px;
 }
