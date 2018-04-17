@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Nguyen Van Phuc</title>
 	<link rel="stylesheet" type="text/css" href="1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<header id="header" class="header">
@@ -15,29 +16,78 @@
 			<ul class="main-nav">
 				<li><a href="">HOME</a></li>
 				<li><a href="gallery.html">GALLERY</a></li>
-				<li><a href="">CONTACT</a></li>
+				<li><a href="JSBasic/index.html">JS BASIC</a></li>
 				<li><a href="http://facebook.com/jeremyshinnosuke">FACEBOOK</a></li>
 			</ul>
 		</div>
 		<div class="information">
 				<h1 style="color: tomato"> Nguyen Van Phuc <span style="color: red">( PHP Developer)</span> </h1>
 				<div class="name">
-					<b>Name :</b> <i>Nguyen Van Phuc</i>
+					<b>Name :</b> <i id = "name">Nguyen Van Phuc</i>
+					<script type="text/javascript">
+						$(function(){
+							$('#name').mouseenter(function() {  //id = name
+								alert('Username is : ' + $('#name').text());
+								$('#name').hide();
+						});
+						});
+					</script>
 				</div>
 				<div class="dob">
-					<b>Date of birth :</b> <i>28/11/1994</i>
+					<b>Date of birth :</b> <i id="dob">28/11/1994</i>
+					<script type="text/javascript">
+						$(function(){
+							$('#dob').mouseenter(function() {  //id = name
+								alert('Date of birth is : ' + $('#dob').text());
+								$('#dob').fadeOut(2000);
+						});
+						});
+					</script>
 				</div>
 				<div class="address">
-					<b>Address :</b> <i>Giao Yen - Giao Thuy - Nam Dinh</i>		
+					<b>Address :</b> <i id = "address">Giao Yen - Giao Thuy - Nam Dinh</i>
+					<script type="text/javascript">
+						$(function(){
+							$('#address').mouseenter(function() {  //id = name
+								alert('Address is : ' + $('#address').text());
+								$('#address').slideUp(2000);
+						});
+						});
+					</script>		
 				</div>
+
 				<div class="ptit">
-					<b>University :</b> <i>Hoc Vien Cong Nghe Buu Chinh Vien Thong </i>		
+					<b>University :</b> <i id = "ptit">Hoc Vien Cong Nghe Buu Chinh Vien Thong </i>	
+					<script type="text/javascript">
+						$(function(){
+							$('#ptit').mouseenter(function() {  //id = name
+								alert('University is : ' + $('#ptit').text());
+								$('#ptit').css('color','blue');
+						});
+						});
+					</script>	
 				</div>
 				<div class="phone">
-					<b>Phone number :</b> <i>0165 371 4165</i>		
+					<b>Phone number :</b> <i id = "phone">0165 371 4165</i>		
+					<script type="text/javascript">
+						$(function(){
+							$('#name').mouseenter(function() {  //id = name
+								alert('Username is : ' + $('#name').text());
+								$('#name').hide();
+						});
+						});
+					</script>
 				</div>
 				<div class="email">
-					<b>Email :</b> <i>phucnv.94ptit@gmail.com</i>		
+					<b>Email :</b> <i id = "email">phucnv.94ptit@gmail.com</i>	
+					<script type="text/javascript">
+						$(function(){
+							$('#email').mouseenter(function() {  //id = name
+								alert('Email is : ' + $('#email').text());
+								$('#email').after(' and jeremyphuc94@gmail.com');
+						});
+						});
+					</script>	
 				</div>
 		</div>
 	</header>

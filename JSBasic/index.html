@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Javascript Basic and Jquery</title>
+</head>
+<body>
+	                        <!-- WHERE? -->
+	<h1 style="color:red;text-align: center;">WHERE</h1>
+	<h2 id="inbutton">IN BUTTON</h2>
+	<button type="button" onclick="document.getElementById('inbutton').innerText = Date();">Time</button>
+	<p id="innerText">EXTERNAL</p>
+	<button type="button" onclick="myFunction()">Change Text</button>
+	<script type="text/javascript" src="external.js"></script>
+	<p>Internal</p>
+	<p id="demo">Demo</p>
+	<!-- <script>
+	document.getElementById("demo").innerHTML = 5 + 6;
+	</script> -->
+						<!-- Jquery -->
+						<script type="text/javascript">
+							$(document).ready(function (){
+									$('#demo').mouseenter(function (){ //khi di chuot vao #demo: id # ; class .;html ''
+										alert('This is demo of Jquery');
+									});
+
+							});
+						</script>
+
+	                        <!-- OUTPUT -->
+	<hr>
+</body>
+</html>
